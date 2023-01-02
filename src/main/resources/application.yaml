@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.0.11:3306/dw_501
+    username: project
+    password: '12341234'
+  jpa:
+    database: mysql
+    generate-ddl: true
+    hibernate.ddl.auto: update
+    show-sql: true
