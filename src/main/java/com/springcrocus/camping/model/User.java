@@ -10,6 +10,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.CreationTimestamp;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -40,6 +42,7 @@ public class User {
     private int userGrade;
     @Column(length = 30)
     private String userNickname;
+    @CreationTimestamp
     @Column(columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private Timestamp userJoinDate;
     @Column(length = 15)
